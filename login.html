@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punjab Heritage</title>
+    <script type = "text/javascript" src="js/login_f.js"></script>
 </head>
+<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
+  
 <body>
     <body>
         <div class="wrapper">
@@ -36,7 +40,30 @@
                             </nav>
                         </div>
                     </div>
-       
+                </header>
+                <div class="banner">
+                    <img src="images/golden_temple.jpg" alt="">
+                </div>
+           </div>
+        </div>
+    
+          <div class="login_middlepart"> 
+                    <div class="login_box">  
+                        <h1>User Login </h1>
+                        <label>Email : </label>   
+                        <input type="text" placeholder="Enter Email" id="l_username" required>  
+                        <label>Password : </label>   
+                        <input type="password" placeholder="Enter Password" id="l_password" required>  
+                        <button type="button" onclick="validate()">Login</button>    
+                         <p id="wrong_password"></p>
+                    </div>   
+                    <div class="userdata">
+                        <table id="myTable" class="myTable">
+                          
+                        </table>
+                  </div>
+                   
+    
 	 
                     <footer class="footersection" id="footerid">
         <div class="footerdiv">
