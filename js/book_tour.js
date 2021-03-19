@@ -184,7 +184,7 @@ function validate()
 				  //alert("Login Success"); 
 				  //window.location.href = "UserWishList.html";
 					 var db;
-					 var request = window.indexedDB.open("PunjabDB", 3);
+					 var request = window.indexedDB.open("Punjab", 3);
 					 
 					 request.onerror = function(event) {
 						console.log("error: ");
@@ -198,13 +198,13 @@ function validate()
 					 
 					 request.onupgradeneeded = function(event) {
 						var db = event.target.result;
-						var objectStore = db.createObjectStore("TourBooking", {autoIncrement: true});
+						var objectStore = db.createObjectStore("TourBook", {autoIncrement: true});
 						
 					 }
 					 
 					 
 					 function readAll() {
-						var objectStore = db.transaction("TourBooking").objectStore("TourBooking");
+						var objectStore = db.transaction("TourBook").objectStore("TourBook");
 						
 						objectStore.openCursor().onsuccess = function(event) {
 						   var cursor = event.target.result;

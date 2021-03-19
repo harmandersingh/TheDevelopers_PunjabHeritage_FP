@@ -2,8 +2,8 @@ function validate()
 	{
 		var name = document.getElementById("l_username").value;
 		var pass = document.getElementById("l_password").value;
-		var atposition=x.indexOf("@");  
-		var dotposition=x.lastIndexOf(".");
+		var atposition=name.indexOf("@");  
+		var dotposition=name.lastIndexOf(".");
 		identify();
 		function identify()
 		{

@@ -6,8 +6,8 @@ function tour(desti)
 	if(desti == "amritsar")
 	{
 		package_name = "Amritsar Tour Packages";
-		duration = " 02 nights/ 03 Days";
-		destination = " Amritsar-delhi-Amritsar";
+		duration = "02 nights/ 03 Days";
+		destination = "Amritsar-delhi-Amritsar";
 	}
 	else if(desti=="holidays")
 	{
@@ -49,11 +49,11 @@ function tour(desti)
          }
          
          var db;
-         var request = window.indexedDB.open("PunjabDB", 3);
+         var request = window.indexedDB.open("Punjab", 3);
          
 		 request.onupgradeneeded = function(event) {
             var db = event.target.result;
-            var objectStore = db.createObjectStore("TourBooking", {autoIncrement: true});   
+            var objectStore = db.createObjectStore("TourBook", {autoIncrement: true});   
          }
 		 
          request.onerror = function(event) {
@@ -68,8 +68,8 @@ function tour(desti)
          
          function add(db, pack,dur,des) {
 			  // Start a database transaction and get the notes object store
-			  let tx = db.transaction(['TourBooking'], 'readwrite');
-			  let store = tx.objectStore('TourBooking');
+			  let tx = db.transaction(['TourBook'], 'readwrite');
+			  let store = tx.objectStore('TourBook');
 			  // Put the sticky note into the object store
 			  let note = {package_name: pack, duration:dur, destination:des};
 			  store.add(note);

@@ -1,68 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/book.css">
-<script type = "text/javascript" src="js/book_tour.js"></script>  
-
-    <title>Punjab Heritage</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/book.css">
+  <script type = "text/javascript" src="js/book_tour.js"></script>  
+  <title>Punjab Heritage</title>
 </head>
 <body>
-    <div class="container">
-        <div class="Progress_Status" id="Progress_Status"> 
-        <div class="myprogressBar" id="myprogressBar"></div> 
-        </div> 
-        <h1>Register</h1>
-        <p style="color:blue;">Note : If You Are New User First Register YourSelf in Registration Page.</p>
-        <hr>
-    
-        <label><b>Email</b></label><br />
-        <input type="text" placeholder="Enter Email" id="email" onfocusout="progress()" required><br />
-    
-        <label><b>Password</b></label><br />
-        <input type="password" placeholder="Enter Password" id="psw" onfocusout="progress()" required><br />
-    
-        <label><b>Name</b></label><br />
-        <input type="text" placeholder="Enter name" id="name" onfocusout="progress()" required><br />
-          
-        <label><b>Personal URL</b></label><br />
-        <input type="text" placeholder="URL" id="p_url" onfocusout="progress()" required>
-        
-        <p><b>Please select your gender:</b></p>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br /><br />
-        
-        <label><b>Year Of Birth</b></label><br />
-        <input type="number" id="b_date" placeholder="date" name="quantity" onfocusout="progress()" min="1" max="31">
-        <input type="number" id="b_month" placeholder="month" name="quantity" onfocusout="progress()" min="1" max="12">
-        <input type="number" id="b_year" placeholder="year" name="quantity" onfocusout="progress()" min="1900" max="2021">
-        <br />
-        
-        <label><b>Arrival Date</b></label>
-        <input type="number" id="a_date" placeholder="date" name="quantity" onfocusout="progress()" min="1" max="31">
-        <input type="number" id="a_month" placeholder="month" name="quantity" onfocusout="progress()" min="1" max="12">
-        <input type="number" id="a_year" placeholder="year" name="quantity" onfocusout="progress()" min="1900" max="2025">
-       
-        
-        <label><b>Departure Date</b></label>
-        <input type="number" id="d_date" placeholder="date" name="quantity" onfocusout="progress()" min="1" max="31">
-        <input type="number" id="d_month" placeholder="month" name="quantity" onfocusout="progress()" min="1" max="12">
-        <input type="number" id="d_year" placeholder="year" name="quantity" onfocusout="progress()" min="1900" max="2021">
-        
-        <br />
-        <p id="error_msg" style="color:red"></p><br/>
-        <button type="button" class="registerbtn" onclick="validate()">Register</button>
-        <button type="button" class="clearbtn" onclick="clearAll()">Clear All</button>
-        
-      </div>
+
+  <div class="container">
+	<div class="Progress_Status" id="Progress_Status"> 
+	<div class="myprogressBar" id="myprogressBar"></div> 
+	</div> 
+    <h1>Register</h1>
+    <p style="color:blue;">Note : If You Are New User First Register YourSelf in Registration Page.</p>
+    <hr>
+
+    <label><b>Email</b></label><br />
+    <input type="text" placeholder="Enter Email" id="email" onfocusout="progress()" required><br />
+
+    <label><b>Password</b></label><br />
+    <input type="password" placeholder="Enter Password" id="psw" onfocusout="progress()" required><br />
+
+    <label><b>Name</b></label><br />
+    <input type="text" placeholder="Enter name" id="name" onfocusout="progress()" required><br />
       
+    <label><b>Personal URL</b></label><br />
+    <input type="text" placeholder="URL" id="p_url" onfocusout="progress()" required>
     
+    <p><b>Please select your gender:</b></p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br /><br />
     
+    <label><b>Year Of Birth</b></label><br />
+	<input type="number" id="b_date" placeholder="date" name="quantity" onfocusout="progress()" min="1" max="31">
+	<input type="number" id="b_month" placeholder="month" name="quantity" onfocusout="progress()" min="1" max="12">
+	<input type="number" id="b_year" placeholder="year" name="quantity" onfocusout="progress()" min="1900" max="2021">
+    <br />
+    
+    <label><b>Arrival Date</b></label><br/>
+	<input type="number" id="a_date" placeholder="date" name="quantity" onfocusout="progress()" min="1" max="31">
+	<input type="number" id="a_month" placeholder="month" name="quantity" onfocusout="progress()" min="1" max="12">
+	<input type="number" id="a_year" placeholder="year" name="quantity" onfocusout="progress()" min="1900" max="2025"><br>
+   
+    
+    <label><b>Departure Date</b></label><br>
+	<input type="number" id="d_date" placeholder="date" name="quantity" onfocusout="progress()" min="1" max="31">
+	<input type="number" id="d_month" placeholder="month" name="quantity" onfocusout="progress()" min="1" max="12">
+	<input type="number" id="d_year" placeholder="year" name="quantity" onfocusout="progress()" min="1900" max="2021">
+	
+    <br />
+    <p id="error_msg" style="color:red"></p><br/>
+    <button type="button" class="registerbtn" onclick="validate()">Register</button>
+    <button type="button" class="clearbtn" onclick="clearAll()">Clear All</button>
+    
+  </div>
+  
+
 </body>
 </html>

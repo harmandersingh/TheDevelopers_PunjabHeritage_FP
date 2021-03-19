@@ -2,48 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Punjab Heritage</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Punjab Heritage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/culture.css">
+    <script src="js/navBar.js"></script>
+
 </head>
-<link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/culture.css">
 <body>
-    <div class="wrapper">
-        <div class="inner-wrapper">
-            <header>
-                <div class="container">
-                    <div class="left">
-                        <h1>P𝖚𝖓𝖏𝖆𝖇 H𝖊𝖗𝖎𝖙𝖆𝖌𝖊</h1>
-                    </div>
-                    <div class="right">
-                        <img src="images/logo.jpg" alt="">
-                    </div>
-                </div>
-                <div class="main-navigation">
-                    <div class="container">
-                        <nav id="main-menu">
-                            <ul>
-                                <li class="active"><a href="home.html">Home</a></li>
-                                <li><a href="about.html">About Punjab</a></li>
-                                <li><a href="placesTovisit.html">Places to Visit Punjab</a></li>
-                                <li><a href="punjabCulture.html">Punjab Culture</a></li>
-                                <li><a href="punjabtourpackage.html">Tour Package Punjab</a></li>
-                                
-                                <li><a href="registration.html">Registration</a></li>
-                                <li><a href="login.html">Login</a></li>
-                              </ul>
-                                 
-                        </nav>
-                    </div>
-                </div>
-            </header>
+
+    <header>
+        <div class="logo">
+            <div class="left">
+                <h1>Punjab Heritage</h1>
+            </div>
+            <div class="right">
+                <img src="images/logo.jpg" alt="">
+            </div>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About Punjab</a>
+            <a href="placesTovisit.html">Places to Visit Punjab</a>
+            <a href="punjabCulture.html">Punjab Culture</a>
+            <a href="punjabtourpackage.html">Tour Package Punjab</a>
+            
+            <a href="registration.html">Registration</a>
+            <a href="login.html">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </header> 
+
             <div class="banner">
                 <img src="images/golden_temple.jpg" alt="">
             </div>
-       </div>
-    </div>
+       
     <div class="container">
         <h1 class="heading">Punjab Culture and Heritage</h1>
    	   <p class="txt">
@@ -71,6 +68,7 @@
                 <h2>Dance & Music</h2>
             </div>
         </div>
+
         <div class="row">
             <div class="head">
                 <img src="images/Festivals.jpg">
@@ -125,27 +123,28 @@
         </div>
 
     </div>
-    <div class="videos">
-        <video width="400px" height="270px" controls>
-            <source src="videos/bhangra.mp4" type="video/mp4">
-        </video>
-        <video width="400px" height="270px" controls>
-            <source src="videos/festival.mp4" type="video/mp4">
-        </video><br/>
-        <video width="400px" height="270px" controls>
-            <source src="videos/food.mp4" type="video/mp4">
-        </video>
-        <video width="400px" height="270px" controls>
-            <source src="videos/bhangra2.mp4" type="video/mp4">
-        </video>		
-  </div>
-  
-  <footer class="footersection" id="footerid">
-    <div class="footerdiv">
-       <p>Copyright © 2021 All rights reserved </p>
+	  
+	  <center>
+			<video width="400px" height="270px" controls>
+				<source src="videos/bhangra.mp4" type="video/mp4">
+			</video>
+			<video width="400px" height="270px" controls>
+				<source src="videos/festival.mp4" type="video/mp4">
+			</video><br/>
+			<video width="400px" height="270px" controls>
+				<source src="videos/food.mp4" type="video/mp4">
+			</video>
+			<video width="400px" height="270px" controls>
+				<source src="videos/bhangra2.mp4" type="video/mp4">
+			</video>		
+      </center>
+	  
+	  <footer class="footersection" id="footerid">
+        <div class="footerdiv">
+           <p>Copyright © 2021 All rights reserved </p>
 
-    </div>
+        </div>
 
-</footer>
-</body>
+    </footer>
+  </body>
 </html>

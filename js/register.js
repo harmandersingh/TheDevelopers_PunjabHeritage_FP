@@ -3,8 +3,8 @@ function validate()
 		
 		var name = document.getElementById("r_email").value;
 		var pass = document.getElementById("r_password").value;
-		var atposition=x.indexOf("@");  
-		var dotposition=x.lastIndexOf(".");
+		var atposition=name.indexOf("@");  
+		var dotposition=name.lastIndexOf(".");
 		if(name=="" || pass=="")
 		{
 			alert("Fill the Field")
@@ -70,3 +70,4 @@ function validate()
 		}
 		}
 	}
+	
